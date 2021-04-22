@@ -1,0 +1,47 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+  - '8.9.1'
+
+cache:
+  directories:
+     - ./node_modules
+
+env:
+  global:
+    - secure: "oeR0NRf317aSaWQqk3wF9cSG86FkNxjQIGYPqRViaCT9Zz/+gwAwleAtVeGsjIXcINKg4H6fEFjBb/qSJoBLcQA+fltk3uVEH3XvPxf2kH3S5AeOWaQg6RBYceNqF637LXVWKUHcr95N9B4OZvMk104S406+VwueB1kl7/7h+jzGVcjz1xy/bImyRoXEoe5K8HgP6Zx3iGYEZJqzOtAaT2Yg7G+JFhuGcxwvk8w89CSG8bnNVrrDkMmnqAnZVDjYVwKpORZnDm9VYctj84jfZ+fcPmKUsd4zAXmPlo8L4FhZa0acpIBM+RouEOdki4rtkG1jOOIfLOEMrEr8zGD2ydS3D27lgHPt+JNQ9tuD975WdoAaYtNynnLP16JiRVG5wKKwNazatK4sCVplKgrt2MA6+E79CA4Z04M14MesHztxi0dFE+A66Fe/H/rhi7PO+YeGG8jDV5QgZ/hR5f1b8UN85M6GhPFx0Ff8ZHgkTPK1EakEsWXDMmRRtkarXeiPD+rFCBPneZsKhj1oMfPHJCy00HG6FWD0I//ywnTpotRT3sQ+vuJnz+cBhxZ0r+dRzz+YWYG6AeSYkLfbbyv6TFI2ocWF8OflTXhtU6OIYzj0wVFYwstqdinLwaANQFz5cwlJBXwe9bm5PE6ZIXemJUceXQ8nq/aR7xjdIMvcEgw="
+    - secure: "MF4Ai/bCCkKR4yimR+MI5W/pio4PL/DeCvCNiWqsjIcWkUU34RyjIhdplTQPZr/4RHCxfVxh6Ge5kW2bVILnjl1QZ8W7D9Fh/xLH2e59HxQym0GaxApoMteUGzc4HFqU7JhODdse8B47OrU+KhFnuWhrdgKom75pCEcp8UMmL0MCfPAjO+Yg3QQ2o2+Ipu0Meg/y32dksIzmgmSdeslHiXVs9l4DeI1426gnAf52CzWzHleiDM3lzCiTrb18CseiWntT/3mXeqz/vn3hBbnr4b8fI+tGQIRfqQ8PieklBQ1Rcfxa4mcvpzTgSClqZholv4/UMQVREilaP7R3fxyUMhXEodIe8b0ws0wT3xzHynpPITGpwkQragfOfD3ttmrhKiT7jq4tnURwBXKwNfgCA+pvRMtOU8tVQijOBDrvWmTqTXSP1NA2Q541HEuuEeZrOo8SKIFdroi3HKO/y0CrABY9jolUKyLGgHmem/jKItrES0svUdDWxec3EayQF6uwtegl1T38afKPWbDJNlqnwmUh1YcbtnQW/Wv4Bvbx2FQ1oSuIPIx5Il40qQb4N41kdoOTpBXej2A84j8BswHsfHj2ZXNYexjAjxqImtvFxKlI5rQ+e1STqQzaBmNQfDyuBQzHum+YnOM0Ujc7qQqqzJqJ3A4n/1iClqVrvR/9r3A="
+
+
+addons:
+  BROWSERSTACK_USERNAME: 
+    secure: "DtSMAQJVcg5BOjBIoKJKcXfxnASw3tZcSt+uYHSnRVEaNzPjo7/30HrCsLqTei/wgCkDsoetZWsPDiP0/xHb/DwSOKTia6vpRi0ZdAKjNkwsYr0ENJi8p8D6IextmpTVk6WBOKO2NbjSsn8MDu2Zbzd+hOj1ETe4hSsMzhFVTj86HZMbHjgoHnG2ingcWRVYl2SBJqIXSMNsTatRZNoPj7o7GH2nhfUYJiPRlTNEj4vRuTn4lN/r97I5nJIEK4EweXpHyOjQUFhMs4ZtmPB3GjCA91krECLA0i/vrikH00wiR1cdLrQROF4erLYwIoVhLeUHa1oyfGs5Oa6e0PbWiBG2yD49KtU+1OwQvFypHOs1FVKMhN0WSNcMtHEzFMPZHaK+XeXapXorNdAerdu9ekUoHpOlFm0f9w+uWo2F9MqgkoFoAncHbhps/UzBVzlUV7Tx/7kzZo6nS+24Te5buR4724SSRKbHfffOz3Uc1BQwptGI7Pdo14pAstpLmfqQ3Ozy+JVAgtdjwdZYAOffPKWH0oRC4qsfyxYAcclm6VmXwJjnyKgF7quZeQb7ZIflJBxswRREuSznV36WHs8YU13gFja9/Wp8WXgPEDUDnGqJm/zMXAI6QOZtGHHJoi8C92CpTFsnFCmD479Ht2IMdCY1I9NOswsaXEfTrOlihlM="
+  BROWSERSTACK_ACCESS_KEY: 
+      secure: "PrIUiLWy2VI92oCKwfs6EeEwTMhgvcs2JzCjjxwsFvgnCJhFHtyQ6wxqA3gfbJQq5w5+kI1/tzfOz1GtPSi1f8QIITuW+kQccdJw9BkpqwL8YT2wxos9zGJn/Ahez0xz1itL4nO7U/YBfZMQnKDsUUxh+0swyUzGHE1d40fzs2Y6z/OiNVLpw1IUjESO2NnWIBRM1shhq4Tw2ZUO7fcJHZAT1sCnM/BQviw02RLYsRX3CREfn5thAYrFGFY94+IaWG5iUFzYHyl9xsZ4oM2W5vbSYWAS6uFoer+QcGpI6W/ytP5v0Ul4J5DZS715ogxLPaQFkSvn98oW7gk5aNrO177X+hPY6ISbpFH8Wz3RO/ePqU+hbKT5aTgoyaZ/eocLduzrHzPOP2kcPqEWnzCaXDn6ShO0BcbtfdJBnD9qd/+jYUxfmqPXhrk9p20pFFnuuD31PMdzkqmY8NELWRu5FmUVhyjYsVysDIOW1nYdFkTZOJaPN9dTaE3CUp7YDH3HgZDz+VpxLW8jFQZdfS1YVwWDVJGmA2BVyarD+nkNILPe0fhqqcNLWjJk7fca6xmoNNKd+AqsbdrNDMjDGBiW13T+lPz++2HZa8ZqV1wrv7DeCOImejC9B5XoSoHaEJ1r98nx9dOvs5AXJ2F8pf/DO14a+tqbGsol0Cyg0naXQkk="
+apt:
+  sources:
+    - google-chrome
+  packages:
+    - google-chrome-stable
+    - google-chrome-beta
+
+before_install:
+  - export CHROME_BIN=chromium-browser
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+before_script:
+- npm install -g angular-cli
+- npm install -g karma
+- npm install
+- ng build
+
+script: 
+# run tests
+- npm run test:prod
+# run production build
+- npm run build:prod
+# run documentation
+- npm run compodoc
+#- ng e2e
